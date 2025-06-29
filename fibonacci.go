@@ -16,7 +16,7 @@ func Fib64(x uint64) uint64 {
 // Reverse output bits for testing performance of high bits in the testing
 // frameworks
 func Fib64_reverse(x uint64) uint64 {
-	return bits.Reverse(x*golden)
+	return bits.Reverse64(x * golden)
 }
 
 // Inlines two rounds into one

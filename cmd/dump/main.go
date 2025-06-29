@@ -6,7 +6,7 @@ import (
 	"log"
 	"math/rand/v2"
 
-	"github.com/client/inthash"
+	"github.com/client9/inthash"
 
 )
 
