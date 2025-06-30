@@ -16,5 +16,5 @@ Notes:
 * [Dieharder](https://webhome.phy.duke.edu/~rgb/General/dieharder.php)
 * [A Seven Dimensional Analysis of Hashing Methods and its Implication on Query Processing](https://15721.courses.cs.cmu.edu/spring2024/papers/09-hashjoins/richter-vldb2015.pdf) and [comments](https://news.ycombinator.com/item?id=14190937)  (and [copy](https://github.com/tpn/pdfs/blob/master/A%20Seven-Dimensional%20Analysis%20of%20Hashing%20Methods%20and%20its%20Implications%20on%20Query%20Processing%20-%202015%20(p249-richter).pdf) )
 * [Table of basic reversable integer operations](https://marc-b-reynolds.github.io/math/2017/10/13/IntegerBijections.html)
-
-
+* [Mult Inverse](https://marc-b-reynolds.github.io/math/2017/09/18/ModInverse.html), and [Hurclalla](https://jeffhurchalla.com/2022/04/25/a-faster-multiplicative-inverse-mod-a-power-of-2/)
+* [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
