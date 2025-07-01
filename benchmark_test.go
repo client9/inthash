@@ -90,6 +90,10 @@ var tests64 = []hashtest64{
 		Wang64,
 	},
 	{
+		"Wang64b",
+		Wang64b,
+	},
+	{
 		"FNV64",
 		FNV64,
 	},
@@ -151,6 +155,10 @@ func BenchmarkIntHash32(b *testing.B) {
 		{
 			"ShiftMul",
 			Wang32_shiftmult,
+		},
+		{
+			"ShiftMul b",
+			Wang32_shiftmult_b,
 		},
 		{
 			"Prospector",

@@ -21,11 +21,33 @@ func Wang64(key uint64) uint64 {
 	return key
 }
 
+func Wang64b(key uint64) uint64 {
+	key = (^key) + (key << 21) // key = (key << 21) - key - 1;
+	key ^= (key >> 24)
+	key *= 265 // (key + (key << 3)) + (key << 8) // key * 265
+	key ^= (key >> 14)
+	key *= 21 // (key + (key << 2)) + (key << 4) // key * 21
+	key ^= (key >> 28)
+	key += (key << 31)
+	return key
+}
+
 // func hash32shiftmult(key uint32) uint32
 func Wang32_shiftmult(key uint32) uint32 {
 	const c2 = 0x27d4eb2d // a prime or an odd constant
 	key = (key ^ 61) ^ (key >> 16)
 	key = key + (key << 3)
+	key = key ^ (key >> 4)
+	key = key * c2
+	key = key ^ (key >> 15)
+	return key
+}
+
+// func hash32shiftmult(key uint32) uint32
+func Wang32_shiftmult_b(key uint32) uint32 {
+	const c2 = 0x27d4eb2d // a prime or an odd constant
+	key = (key ^ 61) ^ (key >> 16)
+	key *= 9 //key + (key << 3)
 	key = key ^ (key >> 4)
 	key = key * c2
 	key = key ^ (key >> 15)
